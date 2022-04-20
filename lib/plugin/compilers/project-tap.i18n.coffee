@@ -45,7 +45,7 @@ getProjectConfJs = share.getProjectConfJs = (conf) ->
   # for (by the i18n.json compiler). We shouldn't rely on the existence of
   # *.i18n.json file for each supported language, because a language might be
   # defined as supported even when it has no i18n.json files (it's especially
-  # true when tap:i18n is used with tap:i18n-db)
+  # true when w4pnemsak:i18n is used with w4pnemsak:i18n-db)
   if conf.supported_languages?
     for lang_tag in conf.supported_languages
       if language_names[lang_tag]?

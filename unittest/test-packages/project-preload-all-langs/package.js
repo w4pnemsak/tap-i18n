@@ -7,7 +7,7 @@ both = ['server', 'client'];
 server = 'server';
 client = 'client';
 Package.on_use(function (api) {
-  api.use(['tap:i18n'], both);
+  api.use(['w4pnemsak:i18n'], both);
   api.export('TAPi18next');
 
   api.use(['tap-tests:blank-package-tap-i18n'], both);

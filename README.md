@@ -8,12 +8,12 @@ A comprehensive internationalization solution for Meteor
 with the goal of standardizing the way package developers internationalize their
 packages.
 
-[Watch a talk about tap:i18n & tap:i18n-db](https://www.youtube.com/watch?v=cu_dsoIc_0E)
+[Watch a talk about w4pnemsak:i18n & w4pnemsak:i18n-db](https://www.youtube.com/watch?v=cu_dsoIc_0E)
 
-**Get involved in tap:i18n:**
+**Get involved in w4pnemsak:i18n:**
 
 * [Mailing list](http://groups.google.com/d/forum/tap-i18n)
-* [tap:i18n chat on Gitter](https://gitter.im/TAPevents/tap-i18n)
+* [w4pnemsak:i18n chat on Gitter](https://gitter.im/TAPevents/tap-i18n)
 * [Roadmap](https://trello.com/b/w80JNkwf/tap-i18n-roadmap)
 * [New features planning on Hackpad](https://hackpad.com/collection/DRzcZ7sBdZV)
 
@@ -21,11 +21,11 @@ Developed by <a href="http://www.meteorspark.com"><img src="http://www.meteorspa
 
 **Related Packages:**
 
-* Check [tap:i18n-db](https://github.com/TAPevents/tap-i18n-db) for Meteor collections internationalization.
-* Check [tap:i18n-ui](https://github.com/TAPevents/tap-i18n-ui) for bootstrap based UI components for tap:i18n.
-* Check [tap:i18n-bundler](https://github.com/TAPevents/i18n-bundler) for Cordova & static file deployments.
+* Check [w4pnemsak:i18n-db](https://github.com/TAPevents/tap-i18n-db) for Meteor collections internationalization.
+* Check [w4pnemsak:i18n-ui](https://github.com/TAPevents/tap-i18n-ui) for bootstrap based UI components for w4pnemsak:i18n.
+* Check [w4pnemsak:i18n-bundler](https://github.com/TAPevents/i18n-bundler) for Cordova & static file deployments.
 
-**Users of tap-i18n v0.9** and below, read [tap:i18n v1.0 New Features & Backward Compatibility](https://github.com/TAPevents/tap-i18n/wiki/tap:i18n-v1.0-New-Feautres-&-Backward-Compatibility) and update your app to v1.0 .
+**Users of tap-i18n v0.9** and below, read [w4pnemsak:i18n v1.0 New Features & Backward Compatibility](https://github.com/TAPevents/tap-i18n/wiki/w4pnemsak:i18n-v1.0-New-Feautres-&-Backward-Compatibility) and update your app to v1.0 .
 
 ## Contents
 
@@ -98,7 +98,7 @@ You don't need to worry about domain prefixing or package conflicts when you tra
 **Step 1:** Install tap-i18n using meteor:
 
 ```bash
-$ meteor add tap:i18n
+$ meteor add w4pnemsak:i18n
 ```
 
 **Step 2:** Add translation helpers to your markup:
@@ -246,7 +246,7 @@ finishes) and will get invalidated (trigger reactivity) when the translator to
 that lang_tag is ready to be used to translate the key.
 
 Using `i18next.t` `lng` option or `lang`, which we made as alias to `lang` in
-tap:i18n, is equivalent to setting the `lang_tag` attribute.
+w4pnemsak:i18n, is equivalent to setting the `lang_tag` attribute.
 
 The function is a proxy to the i18next.t() method.
 Refer to the [documentation of i18next.t()](http://i18next.github.io/i18next/pages/doc_features.html)
@@ -262,7 +262,7 @@ i18n.json files. Translations defined by loadTranslations will have priority
 over those defined in language files (i18n.json) of *namespace* (the project,
 or package name).
 
-To enjoy [the benefits of tap:i18n](#key-features), you should use language
+To enjoy [the benefits of w4pnemsak:i18n](#key-features), you should use language
 files to internationalize your project whenever you can.
 
 Legitimate cases for *loadTranslations* are:
@@ -316,7 +316,7 @@ TAPi18n.loadTranslations(
   language file to that language (*.i18n.json file) or add that languages to your
   project-tap.i18n file.
 
-* **Translating a package that uses tap:i18n to another language**: If you want
+* **Translating a package that uses w4pnemsak:i18n to another language**: If you want
   to add a new language to a 3rd party package (and you can't get it's owner to
   merge your pull request) consider introducing a "translation" package in which
   package-tap.i18n has the "namespace" options set to the package you are
@@ -383,7 +383,7 @@ Assuming the client language is en.
         "click": "Cliquez Ici"
     }
 
-    page.html (lng and lang options are the same in tap:i18n you can use both):
+    page.html (lng and lang options are the same in w4pnemsak:i18n you can use both):
     ----------
     <template name="x">
         {{_ "click" lang="fr"}} 
@@ -628,7 +628,7 @@ project, will be available.
 **Step 2:** Remove tap-i18n package
 
 ```bash
-$ meteor remove tap:i18n
+$ meteor remove w4pnemsak:i18n
 ```
 
 ### Using tap-i18n in Cordova apps
@@ -640,7 +640,7 @@ to your server's root url when building your project.
 $ meteor build --server="http://www.your-site-domain.com"
 ```
 
-If your app should work when the user is offline, install the [tap:i18n-bundler](https://atmospherejs.com/tap/i18n-bundler) package and follow [its instructions](https://github.com/TAPevents/i18n-bundler#usage).
+If your app should work when the user is offline, install the [w4pnemsak:i18n-bundler](https://atmospherejs.com/tap/i18n-bundler) package and follow [its instructions](https://github.com/TAPevents/i18n-bundler#usage).
 
 ## Developing Packages
 
@@ -688,7 +688,7 @@ The values below are the defaults.
         // directory for the translation files (without leading slash)
         "languages_files_dir": "i18n",
 
-        // tap:i18n automatically separates the translation strings of each package to a
+        // w4pnemsak:i18n automatically separates the translation strings of each package to a
         // namespace dedicated to that package, which is used by the package's translation
         // function and helper. Use the namespace option to set a custom namespace for
         // the package. By using the name of another package you can use your package to
@@ -723,7 +723,7 @@ The leanest set up (for instance in a private package, where you keep the transl
 Your package's package.js should be structured as follow:
 
     Package.on_use(function (api) {
-      api.use(["tap:i18n@1.0.7"], ["client", "server"]);
+      api.use(["w4pnemsak:i18n@1.0.7"], ["client", "server"]);
 
       .
       .

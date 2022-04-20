@@ -34,7 +34,7 @@
     ],
     [
       "coffeescript",
-      "1.0.4"
+      "2.4.1"
     ],
     [
       "ddp",
@@ -138,7 +138,7 @@
     ],
     [
       "tap:http-methods",
-      "0.0.23"
+      "3.0.0"
     ],
     [
       "templating",
@@ -173,7 +173,7 @@
         "ordered-dict": "1.0.1",
         "random": "1.0.1",
         "templating": "1.0.9",
-        "coffeescript": "1.0.4",
+        "coffeescript": "2.4.1",
         "deps": "1.0.5",
         "tracker": "1.0.3",
         "underscore": "1.0.1",

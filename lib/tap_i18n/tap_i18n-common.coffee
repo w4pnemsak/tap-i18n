@@ -9,7 +9,7 @@ TAPi18n = ->
 
   @_loaded_languages = [fallback_language] # stores the loaded languages, the fallback language is loaded automatically
 
-  @conf = null # If conf isn't null we assume that tap:i18n is enabled for the project.
+  @conf = null # If conf isn't null we assume that w4pnemsak:i18n is enabled for the project.
              # We assume conf is valid, we sterilize and validate it during the build process.
 
   @packages = {} # Stores the packages' package-tap.i18n jsons
@@ -50,7 +50,7 @@ _.extend TAPi18n.prototype,
   _loaded_lang_session_key: "TAPi18n::loaded_lang"
 
   _enable: (conf) ->
-    # tap:i18n gets enabled for a project once a conf file is set for it.
+    # w4pnemsak:i18n gets enabled for a project once a conf file is set for it.
     # It can be either a conf object that was set by project-tap.i18n file or
     # a default conf, which is being added if the project has lang files
     # (*.i18n.json) but not project-tap.i18n
@@ -60,7 +60,7 @@ _.extend TAPi18n.prototype,
 
   _onceEnabled: () ->
     # The arch specific code can use this for procedures that should be performed once
-    # tap:i18n gets enabled (project conf file is being set)
+    # w4pnemsak:i18n gets enabled (project conf file is being set)
     return
 
   _enabled: ->

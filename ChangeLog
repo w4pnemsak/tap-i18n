@@ -26,7 +26,7 @@
 2015.05.08, Version 1.5.0
 
 * Make TAPi18n a constructor instead of object, inherit from EventEmitter
-* Make the lang option alias to the lng option in tap:i18n translator functions
+* Make the lang option alias to the lng option in w4pnemsak:i18n translator functions
 * Allow translation to a specific language on the client
 * [BUGFIX] Allow pre Meteor.startup() server side translations, resolves #56
 * [BUGFIX] Allow 0 as first argument of sprintf args. fix #43
@@ -86,13 +86,13 @@
 
 * [bugfix] Packages non-fallback languages now load see issue #13 Thanks
   to @francocatena .
-* [bugfix] tap:i18n files of packages under /packages directory now load
+* [bugfix] w4pnemsak:i18n files of packages under /packages directory now load
   correctly
 
 2014.09.24, Version 1.0.6, 304e1ee00e2916646bf672fd53ef5a6cceb69db4
 
-* [bugfix] Project level: Make loading of tap:i18n files insensitive to order by
-  Registering template helpers as soon as tap:i18n gets enabled and not on
+* [bugfix] Project level: Make loading of w4pnemsak:i18n files insensitive to order by
+  Registering template helpers as soon as w4pnemsak:i18n gets enabled and not on
   Meteor.ready() . Thanks to @danieljonce for reporting this issue
 
 2014.09.24, Version 1.0.5, df044dc3523d1ebb608f1e115a31539b4ba42742
@@ -146,12 +146,12 @@ obsolete. browser_path property renamed to cdn_path.
 
 2014.08.30, Version 0.9.2, 742e44f659dfb7800d332bf4b2aa990e6f220d36
 
-* Bugfix: Build plugin should consider projects with a *:i18n package as tap:i18n enabled
+* Bugfix: Build plugin should consider projects with a *:i18n package as w4pnemsak:i18n enabled
 * Use tap:http-methods instead of raix:http-methods which isn't ready for v0.9.0
 
 2014.08.30, Version 0.9.0, 118aa825e76165aac9df9f3153fbb8edc044a864
 
-* tap-i18n is now tap:i18n
+* tap-i18n is now w4pnemsak:i18n
 * Migrate to Meteor v0.9
 
 2014.08.11, Version 0.8.0, a500ae5c5c6da2aa0ccd56bfe407bfa9c8a77b62

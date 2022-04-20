@@ -1,4 +1,4 @@
-t = Package["tap:i18n"].TAPi18n
+t = Package["w4pnemsak:i18n"].TAPi18n
 
 Tinytest.add 'Disabled tap-i18n Tests - TAPi18n is not defined in global namespace', (test) ->
   test.isTrue typeof TAPi18n == "undefined"

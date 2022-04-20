@@ -1,6 +1,6 @@
 {
   "packages": {
-    "tap:i18n": {
+    "w4pnemsak:i18n": {
         "path": "../../../"
     },
     "tap-tests:blank-package-tap-i18n": {

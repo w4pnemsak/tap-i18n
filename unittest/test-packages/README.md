@@ -1,4 +1,4 @@
-tap:i18n tests
+w4pnemsak:i18n tests
 ==============
 
 Install requirements:
